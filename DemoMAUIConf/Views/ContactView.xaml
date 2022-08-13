@@ -9,7 +9,9 @@
     <ScrollView>
         <Grid Margin="10"
               ColumnDefinitions="*,2*"
-              RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+              RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+              ColumnSpacing="10"
+              RowSpacing="10">
             <Button Grid.Row="0"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"

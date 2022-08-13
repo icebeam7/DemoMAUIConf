@@ -17,7 +17,7 @@ public static class MauiProgram
             })
             .ConfigureEssentials(essentials =>
             {
-                essentials.UseMapServiceToken("apikey");
+                essentials.UseMapServiceToken("bingmaps-apikey");
             });
 
         builder.Services.AddSingleton<IConnectivity>(Connectivity.Current);
@@ -44,6 +44,7 @@ public static class MauiProgram
         
         builder.Services.AddSingleton<IGeolocation>(Geolocation.Default);
         builder.Services.AddSingleton<IMap>(Map.Default);
+        builder.Services.AddSingleton<IGeocoding>(Geocoding.Default);
 
         builder.Services.AddTransient<BatteryViewModel>();
         builder.Services.AddTransient<BatteryView>();
