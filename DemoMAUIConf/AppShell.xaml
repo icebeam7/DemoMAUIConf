@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DemoMAUIConf.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DemoMAUIConf"
+    xmlns:views="clr-namespace:DemoMAUIConf.Views"
+    Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="Battery"
+        ContentTemplate="{DataTemplate views:BatteryView}"
+        Route="BatteryView" />
+
+    <ShellContent
+        Title="Device"
+        ContentTemplate="{DataTemplate views:DeviceView}"
+        Route="DeviceView" />
+
+    <ShellContent
+        Title="App Info"
+        ContentTemplate="{DataTemplate views:AppInfoView}"
+        Route="AppInfoView" />
+
+    <ShellContent
+        Title="Contact"
+        ContentTemplate="{DataTemplate views:ContactView}"
+        Route="ContactView" />
+
+    <ShellContent
+        Title="GPS"
+        ContentTemplate="{DataTemplate views:GPSView}"
+        Route="GPSView" />
+</Shell>

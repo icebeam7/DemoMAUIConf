@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoMAUIConf.Views.AppInfoView"
+             xmlns:vm="clr-namespace:DemoMAUIConf.ViewModels"
+             x:DataType="vm:AppInfoViewModel"
+             Title="App Info Example">
+
+    <Grid Margin="10"
+          ColumnDefinitions="*,2*"
+          RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,*">
+        
+        <Label Grid.Row="0"
+               Grid.Column="0"
+               Text="App Name" />
+
+        <Label Grid.Row="0"
+               Grid.Column="1"
+               Text="{Binding AppInfo.Name}" />
+
+        <Label Grid.Row="1"
+               Grid.Column="0"
+               Text="App Package Name" />
+
+        <Label Grid.Row="1"
+               Grid.Column="1"
+               Text="{Binding AppInfo.PackageName}" />
+
+        <Label Grid.Row="2"
+               Grid.Column="0"
+               Text="App Version" />
+
+        <Label Grid.Row="2"
+               Grid.Column="1"
+               Text="{Binding AppInfo.VersionString}" />
+
+        <Label Grid.Row="3"
+               Grid.Column="0"
+               Text="App Build" />
+
+        <Label Grid.Row="3"
+               Grid.Column="1"
+               Text="{Binding AppInfo.BuildString}" />
+
+        <Label Grid.Row="4"
+               Grid.Column="0"
+               Text="App Selected Theme" />
+
+        <Label Grid.Row="4"
+               Grid.Column="1"
+               Text="{Binding AppInfo.RequestedTheme}" />
+
+        <Button Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Command="{Binding DisplaySettingsCommand}"
+                Text="Display Settings" />
+
+        <Button Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Command="{Binding VisitWebsiteCommand}"
+                Text="Visit Our Website" />
+
+    </Grid>
+</ContentPage>

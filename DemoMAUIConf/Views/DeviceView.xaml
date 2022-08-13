@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoMAUIConf.Views.DeviceView"
+             xmlns:vm="clr-namespace:DemoMAUIConf.ViewModels"
+             x:DataType="vm:DeviceViewModel"
+             Title="Device Example">
+    <Grid Margin="10"
+          ColumnDefinitions="*,2*"
+          RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,*">
+        <Label Grid.Row="0"
+               Grid.Column="0"
+               Text="Model" />
+
+        <Label Grid.Row="0"
+               Grid.Column="1"
+               Text="{Binding DeviceInfo.Model}" />
+
+        <Label Grid.Row="1"
+               Grid.Column="0"
+               Text="Manufacturer" />
+
+        <Label Grid.Row="1"
+               Grid.Column="1"
+               Text="{Binding DeviceInfo.Manufacturer}" />
+
+        <Label Grid.Row="2"
+               Grid.Column="0"
+               Text="Name" />
+
+        <Label Grid.Row="2"
+               Grid.Column="1"
+               Text="{Binding DeviceInfo.Name}" />
+
+        <Label Grid.Row="3"
+               Grid.Column="0"
+               Text="Version" />
+
+        <Label Grid.Row="3"
+               Grid.Column="1"
+               Text="{Binding DeviceInfo.VersionString}" />
+
+        <Label Grid.Row="4"
+               Grid.Column="0"
+               Text="Platform" />
+
+        <Label Grid.Row="4"
+               Grid.Column="1"
+               Text="{Binding DeviceInfo.Platform}" />
+
+        <Label Grid.Row="5"
+               Grid.Column="0"
+               Text="Idiom" />
+
+        <Label Grid.Row="5"
+               Grid.Column="1"
+               Text="{Binding DeviceInfo.Idiom}" />
+
+        <Label Grid.Row="6"
+               Grid.Column="0"
+               Text="Type" />
+
+        <Label Grid.Row="6"
+               Grid.Column="1"
+               Text="{Binding DeviceInfo.DeviceType}" />
+
+        <Label Grid.Row="7"
+               Grid.Column="0"
+               Text="Orientation" />
+
+        <Label Grid.Row="7"
+               Grid.Column="1"
+               Text="{Binding DeviceDisplay.MainDisplayInfo.Orientation}" />
+
+        <Label Grid.Row="8"
+               Grid.Column="0"
+               Text="Width" />
+
+        <Label Grid.Row="8"
+               Grid.Column="1"
+               Text="{Binding DeviceDisplay.MainDisplayInfo.Width}" />
+
+        <Label Grid.Row="9"
+               Grid.Column="0"
+               Text="Height" />
+
+        <Label Grid.Row="9"
+               Grid.Column="1"
+               Text="{Binding DeviceDisplay.MainDisplayInfo.Height}" />
+
+        <Label Grid.Row="10"
+               Grid.Column="0"
+               Text="Rotation" />
+
+        <Label Grid.Row="10"
+               Grid.Column="1"
+               Text="{Binding DeviceDisplay.MainDisplayInfo.Rotation}" />
+    </Grid>
+</ContentPage>
